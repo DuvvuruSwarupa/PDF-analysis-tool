@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload PDF</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Upload PDF</h1>
+        <form id="uploadForm" enctype="multipart/form-data" onsubmit="uploadFile(); return false;">
+            <input type="file" id="pdfFile" name="pdfFile" accept=".pdf">
+            <button type="submit">Upload</button>
+        </form>
+     <div id="outputBox" class="output-box"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
